@@ -28,13 +28,6 @@ public interface PosDataService {
      */
     @NonNull List<Pos> getAll();
 
-    /**
-     * Retrieves a single POS entity by its unique name.
-     *
-     * @param name the name of the POS to retrieve; must not be null
-     * @return the POS entity with the specified name; never null
-     * @throws PosNotFoundException if no POS exists with the given name
-     */
     @NonNull Pos getByName(@NonNull String name) throws PosNotFoundException;
 
     /**
